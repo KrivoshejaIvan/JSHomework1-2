@@ -1,4 +1,4 @@
-﻿var arrName = [];
+var arrName = [];
 
 for (var i = 0; i < 5; i++) {
     arrName[i] = prompt('Введите имя', '');
