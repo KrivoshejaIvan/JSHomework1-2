@@ -14,7 +14,7 @@ for (var i = 0; i < arrName[i].length; i++ ) {
     }
 }
 
-if (flag == 1) {
+if (flag == true) {
     alert(login + ', вы успешно вошли');
 } else {
     alert('Ошибка входа!');
