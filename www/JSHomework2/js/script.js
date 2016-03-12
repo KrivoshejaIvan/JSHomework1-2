@@ -6,12 +6,10 @@ for (var i = 0; i < 5; i++) {
 var login = prompt ('Введите имя пользователя');
 var flag = false;
 
-for (var i = 0; i < arrName[i].length; i++ ) {
+for (var i = 0; i < arrName.length; i++ ) {
     if ( login === arrName[i] ) {
         flag = true;
-    } else {
-        flag = false;
-    }
+    } 
 }
 
 if (flag == true) {
