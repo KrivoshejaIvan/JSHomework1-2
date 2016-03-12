@@ -1,17 +1,21 @@
-﻿var arrOfName = [];
+﻿var arrName = [];
 
 for (var i = 0; i < 5; i++) {
-    arrOfName[i] = prompt('Введите имя', '');
+    arrName[i] = prompt('Введите имя', '');
 }
 var login = prompt ('Введите имя пользователя');
+var flag = false;
 
-
-for (var i = 0; i < arrOfName[i].length; i++ ) {
-    if ( login == arrOfName[i] ) {
-        alert ('Вы успешно вошли')
+for (var i = 0; i < arrName[i].length; i++ ) {
+    if ( login === arrName[i] ) {
+        flag = true;
     } else {
-        alert ( 'Ошибка входа' )
+        flag = false;
     }
 }
 
-
+if (flag == 1) {
+    alert(login + ', вы успешно вошли');
+} else {
+    alert('Ошибка входа!');
+}
